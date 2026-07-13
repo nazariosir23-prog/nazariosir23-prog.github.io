@@ -1,0 +1,21 @@
+#geral{
+    /*position: absolute;*/
+    background-color: cyan;
+    width: 100px;
+    height: 200px;
+    color: black;
+    }
+    
+      #coluna1{
+        width: 100%;
+        height:30% ;
+
+    }  #coluna2{
+        width: 100%;
+        height:30% ;
+
+    }  #coluna3{
+        width: 100%;
+        height:30% ;
+
+    }
