@@ -1,14 +1,627 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Página inicial!</title>
-    </head>
-    <body>
-        <p>Ola!</p>
-        <p>Seja bem vindo ao meu site</p>
-        <p><img src="imagm_aluno.jpeg" width="300" height="300"/></p>
-        <p><a>  href="curriculo.html">currículo</a></p>
-        <p>Não deixe de acessar meu curriculo!</p>
-    </body>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Site Pessoal - Sir de Souza Nazario Junio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+.tela{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+.card{
+    border-radius:20px;
+    box-shadow:0 5px 20px #0005;
+}
+
+
+.oculto{
+    display:none;
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body class="bg-dark text-white">
+
+
+<!-- TELA INICIAL -->
+
+<div id="inicio" class="tela">
+
+<div class="text-center">
+
+
+<i class="bi bi-person-circle display-1 text-warning"></i>
+
+
+<h1 class="mt-4">
+Bem-vindo ao site pessoal
+</h1>
+
+
+<h2 class="text-warning">
+Sir de Souza Nazario Junio
+</h2>
+
+
+<p class="lead">
+Clique no botão para acessar o site
+</p>
+
+
+
+<button onclick="entrar()"
+class="btn btn-warning btn-lg rounded-pill px-5 fw-bold">
+
+<i class="bi bi-arrow-right-circle"></i>
+
+INICIAR
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+<!-- MENU -->
+
+<div id="menu" class="tela oculto">
+
+
+<div class="container text-center">
+
+
+<h1>
+
+Menu Principal
+
+</h1>
+
+
+<p>
+
+Escolha uma opção:
+
+</p>
+
+
+
+<button onclick="mostrar('curriculo')"
+class="btn btn-light btn-lg rounded-pill m-2">
+
+<i class="bi bi-file-person"></i>
+
+Currículo
+
+</button>
+
+
+
+
+<button onclick="mostrar('contato')"
+class="btn btn-success btn-lg rounded-pill m-2">
+
+<i class="bi bi-chat-dots"></i>
+
+Fale Comigo
+
+</button>
+
+
+
+
+<button onclick="mostrar('copa')"
+class="btn btn-warning btn-lg rounded-pill m-2">
+
+<i class="bi bi-trophy"></i>
+
+Copa do Mundo
+
+</button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<!-- CURRICULO -->
+
+
+<div id="curriculo" class="tela oculto">
+
+
+<div class="container">
+
+
+<div class="card bg-light text-dark p-4">
+
+
+<h1 class="text-primary">
+
+Currículo
+
+</h1>
+
+
+<h3>
+Sir de Souza Nazario Junio
+</h3>
+
+
+<p>
+<strong>Área:</strong>
+Tecnologia e Sistemas
+</p>
+
+
+<hr>
+
+
+<h4>Sobre</h4>
+
+<p>
+Profissional da área de tecnologia,
+ensino e desenvolvimento de sistemas.
+</p>
+
+
+<h4>Experiência</h4>
+
+<p>
+Instrutor - Prime System Venda Nova
+</p>
+
+
+<h4>Habilidades</h4>
+
+<p>
+Informática • Sistemas • Tecnologia
+</p>
+
+
+
+</div>
+
+
+<button onclick="voltarMenu()"
+class="btn btn-primary mt-3">
+
+Voltar
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CONTATO -->
+
+
+<div id="contato" class="tela oculto">
+
+
+<div class="container">
+
+
+<div class="card bg-light text-dark p-4 mx-auto"
+style="max-width:500px;">
+
+
+<h1 class="text-success">
+
+Fale Comigo
+
+</h1>
+
+
+<p>
+📱 WhatsApp: (11) 99999-9999
+</p>
+
+
+<p>
+✉️ Email: contato@email.com
+</p>
+
+
+
+<input class="form-control mb-3"
+placeholder="Nome">
+
+
+<input class="form-control mb-3"
+placeholder="Email">
+
+
+
+<textarea class="form-control mb-3"
+placeholder="Mensagem"></textarea>
+
+
+
+<button class="btn btn-success w-100">
+
+Enviar
+
+</button>
+
+
+</div>
+
+
+
+<button onclick="voltarMenu()"
+class="btn btn-primary mt-3">
+
+Voltar
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- COPA DO MUNDO -->
+
+
+<div id="copa" class="tela oculto">
+
+
+<div class="container">
+
+
+<div class="card bg-light text-dark p-4">
+
+
+<h1 class="text-warning text-center">
+
+🏆 Copa do Mundo FIFA
+
+</h1>
+
+
+<p class="text-center">
+
+Argentina 🇦🇷 e Espanha 🇪🇸
+
+</p>
+
+
+<hr>
+
+
+
+<h2 class="text-primary">
+
+🇦🇷 Argentina
+
+</h2>
+
+
+<p>
+
+Uma das maiores seleções da história.
+Possui 3 títulos mundiais:
+
+</p>
+
+
+<ul>
+
+<li>1978 - Campeã mundial</li>
+
+<li>1986 - Campeã com Maradona</li>
+
+<li>2022 - Campeã com Messi</li>
+
+</ul>
+
+
+
+<h4>
+Jogos marcantes:
+</h4>
+
+
+<ul>
+
+<li>
+Argentina 2 x 1 Inglaterra - Copa 1986
+</li>
+
+<li>
+Argentina 3 x 3 França - Final Copa 2022
+</li>
+
+<li>
+Argentina 4 x 3 França - Copa 2018
+</li>
+
+</ul>
+
+
+
+<hr>
+
+
+
+<h2 class="text-danger">
+
+🇪🇸 Espanha
+
+</h2>
+
+
+<p>
+
+Seleção conhecida pelo estilo Tiki-Taka,
+com muita posse de bola e passes rápidos.
+
+</p>
+
+
+<ul>
+
+<li>
+2010 - Campeã mundial
+</li>
+
+<li>
+Final 2010:
+Espanha 1 x 0 Holanda
+</li>
+
+<li>
+Gol do título:
+Andrés Iniesta
+</li>
+
+</ul>
+
+
+
+<h4>
+Jogos marcantes:
+</h4>
+
+
+<ul>
+
+<li>
+Espanha 1 x 0 Alemanha - Copa 2010
+</li>
+
+
+<li>
+Espanha 7 x 0 Costa Rica - Copa 2022
+</li>
+
+
+</ul>
+
+
+
+
+<hr>
+
+
+<h3>
+Comparação
+</h3>
+
+
+<table class="table table-bordered">
+
+
+<tr>
+
+<th>
+Categoria
+</th>
+
+<th>
+Argentina 🇦🇷
+</th>
+
+<th>
+Espanha 🇪🇸
+</th>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Títulos
+</td>
+
+<td>
+3
+</td>
+
+<td>
+1
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>
+Ídolos
+</td>
+
+<td>
+Maradona e Messi
+</td>
+
+<td>
+Xavi e Iniesta
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>
+Estilo
+</td>
+
+<td>
+Técnica e raça
+</td>
+
+<td>
+Posse de bola
+</td>
+
+</tr>
+
+
+</table>
+
+
+</div>
+
+
+
+<button onclick="voltarMenu()"
+class="btn btn-primary mt-3">
+
+Voltar
+
+</button>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function esconderTudo(){
+
+document.getElementById("inicio").style.display="none";
+
+document.getElementById("menu").style.display="none";
+
+document.getElementById("curriculo").style.display="none";
+
+document.getElementById("contato").style.display="none";
+
+document.getElementById("copa").style.display="none";
+
+}
+
+
+
+function entrar(){
+
+esconderTudo();
+
+document.getElementById("menu").style.display="flex";
+
+}
+
+
+
+function mostrar(pagina){
+
+esconderTudo();
+
+document.getElementById(pagina).style.display="flex";
+
+}
+
+
+
+function voltarMenu(){
+
+esconderTudo();
+
+document.getElementById("menu").style.display="flex";
+
+}
+
+
+</script>
+
+
+
+</body>
+
 </html>
