@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gigantes do Futebol Mundial</title>
+
+<style>
+:root {
+    --azul: #74ACDF;
+    --vermelho: #C60B1E;
+    --amarelo: #F1BF00;
+    --escuro: #1A2530;
+    --fundo: #F4F6F9;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--fundo);
+    color: #333;
+}
+
+header {
+    background: var(--escuro);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    color: #ccc;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #0002;
+}
+
+.card-header {
+    padding: 25px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.argentina .card-header {
+    background: var(--azul);
+}
+
+.espanha .card-header {
+    background: var(--vermelho);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+h3 {
+    color: var(--escuro);
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.badge {
+    background: #eee;
+    padding: 4px 10px;
+    border-radius: 20px;
+}
+
+.gold {
+    background: var(--amarelo);
+}
+
+table {
+    width: 100%;
+    margin-top: 35px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background: var(--escuro);
+    color: white;
+}
+
+td, th {
+    padding: 15px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+footer {
+    background: var(--escuro);
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Gigantes do Futebol Mundial</h1>
+<p>Argentina 🇦🇷 e Espanha 🇪🇸</p>
+</header>
+
+
+<div class="container">
+
+<div class="grid">
+
+<section class="card argentina">
+
+<div class="card-header">
+Argentina 🇦🇷
+</div>
+
+<div class="card-body">
+
+<h3>História</h3>
+<p>
+Uma das maiores seleções do mundo, com grandes nomes como
+Maradona e Messi.
+</p>
+
+<h3>Títulos</h3>
+
+<ul>
+<li>Copa do Mundo <span class="badge gold">3</span></li>
+<li>Copa América <span class="badge">16</span></li>
+<li>Finalíssima <span class="badge">2</span></li>
+</ul>
+
+<h3>Estilo</h3>
+<p>
+Garra, talento individual e forte espírito competitivo.
+</p>
+
+</div>
+</section>
+
+
+<section class="card espanha">
+
+<div class="card-header">
+Espanha 🇪🇸
+</div>
+
+<div class="card-body">
+
+<h3>História</h3>
+<p>
+Conhecida pelo estilo Tiki-Taka e pela geração campeã mundial de 2010.
+</p>
+
+<h3>Títulos</h3>
+
+<ul>
+<li>Copa do Mundo <span class="badge gold">1</span></li>
+<li>Eurocopa <span class="badge">4</span></li>
+<li>Nations League <span class="badge">1</span></li>
+</ul>
+
+<h3>Estilo</h3>
+<p>
+Posse de bola, técnica e jogo coletivo.
+</p>
+
+</div>
+</section>
+
+</div>
+
+
+<table>
+
+<tr>
+<th>Critério</th>
+<th>Argentina 🇦🇷</th>
+<th>Espanha 🇪🇸</th>
+</tr>
+
+<tr>
+<td>Copa do Mundo</td>
+<td>3 títulos</td>
+<td>1 título</td>
+</tr>
+
+<tr>
+<td>Ídolos</td>
+<td>Maradona e Messi</td>
+<td>Xavi e Iniesta</td>
+</tr>
+
+<tr>
+<td>Estilo</td>
+<td>Garra e talento</td>
+<td>Posse e controle</td>
+</tr>
+
+</table>
+
+
+</div>
+
+
+<footer>
+© Futebol Mundial - Página Informativa
+</footer>
+
+</body>
+</html>
